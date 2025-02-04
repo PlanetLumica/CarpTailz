@@ -78,7 +78,7 @@ let options = {
     },
 
 
-    /* Invetory
+    /* Inventory
     /* --------------------------------------------------------------- */
     inventory: {
 
@@ -87,7 +87,7 @@ let options = {
         logSheetPage: sheetPages.inventoryLog,
     
         itemAmount: 24,
-        sortTypes: ['Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
+        sortTypes: ['Currency', 'MYO Slot', 'Trait Item', 'Pet', 'Collectable', 'Misc'],
         
         searchFilterParams: ['Username'],
     
