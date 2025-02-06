@@ -15,6 +15,9 @@ let sheetPages = {
     inventory: "inventory",
     inventoryLog: "inventory log",
     items: "items",
+    pets: "pets",
+    petLog: "pets log",
+    beastiary: "beastiary",
     traits: "traits",
     prompts: "prompts",
     faq: "faq",
@@ -56,8 +59,8 @@ let options = {
         itemOrder: "asc",
 
         filterColumn: 'Design Type',
-        searchFilterParams: ['ID', 'Owner', 'Designer', 'Artist'],
-        fauxFolderColumn: 'Species',
+        searchFilterParams: ['ID', 'Owner', 'Designer', 'Artist', 'Traits'],
+        fauxFolderColumn: 'Rarity',
 
     },
 
@@ -87,10 +90,41 @@ let options = {
         logSheetPage: sheetPages.inventoryLog,
     
         itemAmount: 24,
-        sortTypes: ['Currency', 'MYO Slot', 'Trait Item', 'Pet', 'Collectable', 'Misc'],
+        sortTypes: ['Currency', 'MYO Slot', 'Trait Item', 'Pet', 'Collectible', 'Misc'],
         
         searchFilterParams: ['Username'],
     
+    },
+
+    /* Beastiary
+    /* --------------------------------------------------------------- */
+    beastiary: {
+
+        sheetPage: sheetPages.beastiary,
+    
+        itemAmount: 24,
+        itemOrder: "asc",
+    
+        filterColumn: 'Rarity',
+        searchFilterParams: ['Name', 'Artist'],
+        fauxFolderColumn: 'Category',
+    
+    },
+
+    /* Pets
+    /* --------------------------------------------------------------- */
+    pets: {
+
+        sheetPage: sheetPages.pets,
+        logSheetPage: sheetPages.petsLog,
+
+        itemAmount: 24,
+        itemOrder: "asc",
+
+        filterColumn: 'Category',
+        searchFilterParams: ['ID', 'Owner', 'Linked To...', 'Bond Level'],
+        fauxFolderColumn: 'Rarity',
+
     },
 
 
